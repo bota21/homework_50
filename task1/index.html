@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div id="container" class="container"></div>
+
+  <script type="text/babel">
+    let Card = ({title, year, img}) => {
+    return (
+      <div className="card">
+      <h2 className="card_name">{title}</h2>
+      <h5 className="card_year">{year}</h5>
+      <img src={img} alt={title} className="card_img"/>
+    </div>
+    );
+  };
+  let CreateCards = (
+      <div className="cards">
+      <Card title="Wall-e" year="2008" img="img/Wall-e.jpg" />
+      <Card title="Рататуй" year="2007" img="img/Ratatoulle.jpg" />
+      <Card title="История игрушек" year="1995" img="img/Toy.jpg" />
+      </div>
+    );
+ 
+  ReactDOM.render(CreateCards, document.getElementById('container'))
+  </script>
+</body>
+
+</html>
