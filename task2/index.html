@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/script.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="page"></div>
+  
+  <script type="text/babel">
+    let Header = () => {
+  return (
+    <header className="header">
+    <div className="container header_container">
+      <a href="#" className="logo">Frebdm
+        <img src="img/logo.png" alt="Logo" />
+      </a>
+      <nav className="header_menu">
+        <a href="#" className="header_menu_list">HOME</a>
+        <a href="#" className="header_menu_list">PORTFOLIOS</a>
+        <a href="#" className="header_menu_list">BLOG</a>
+        <a href="#" className="header_menu_list">CONTACT</a>
+        <a href="#" className="header_menu_list">SHOP</a>
+      </nav>
+      <a href="#" className="enter">
+        <img src="img/ic-head.png" alt="Enter" />
+      </a>
+    </div>
+  </header>
+  );
+};
+let Carousel = () => {
+  return (
+    <div className="carousel">
+    <div className="carousel_item"><img src="upload/photo_1.jpg" alt="photo_1" className="carousel_img" /></div>
+    <div className="carousel_item"><img src="upload/photo_2.jpeg" alt="photo_2" className="carousel_img" /></div>
+    <div className="carousel_item"><img src="upload/photo_3.jpg" alt="photo_3" className="carousel_img" /></div>
+  </div>
+  );
+};
+let Main = () => {
+  return (
+    <main className="main">
+      <div className="container">
+      <article className="article">
+        <h2 className="title">La Liberté guidant le peuple</h2>
+        <p className="article_text">La Liberté guidant le peuple est une huile sur toile d'Eugène Delacroix réalisée en
+          1830, inspirée de la révolution des Trois Glorieuses qui s'est passée en 1830. Présentée au public au Salon de
+          Paris de 1831 sous le titre Scènes de barricades</p>
+          </article>
+          </div>
+          </main>
+  );
+};
+let Content = () => {
+  return (
+    <div className="content">
+      <div className="container">
+        <h2 className="title">Postérité de l'œuvre</h2>
+        <div className="content_wrappers">
+          <div className="content_wrappers_wrapper">
+            <div className="content_wrappers_wrapper_icons screw"></div>
+            <div className="content_wrappers_wrapper_text">Située dans la salle Mollien, au musée du Louvre, l'œuvre est
+              plusieurs fois déplacée pour être prêtée à des expositions temporaires : une première fois à Tokyo (Japon)
+              en 1999 et une autre à Strasbourg en 2004.</div>
+          </div>
+          <div className="content_wrappers_wrapper">
+            <div className="content_wrappers_wrapper_icons eye"></div>
+            <div className="content_wrappers_wrapper_text">Située dans la salle Mollien, au musée du Louvre, l'œuvre est
+              plusieurs fois déplacée pour être prêtée à des expositions temporaires : une première fois à Tokyo (Japon)
+              en 1999 et une autre à Strasbourg en 2004.</div>
+          </div>
+          <div className="content_wrappers_wrapper last_wrapper">
+            <div className="content_wrappers_wrapper_icons update"></div>
+            <div className="content_wrappers_wrapper_text">Située dans la salle Mollien, au musée du Louvre, l'œuvre est
+              plusieurs fois déplacée pour être prêtée à des expositions temporaires : une première fois à Tokyo (Japon)
+              en 1999 et une autre à Strasbourg en 2004.</div>
+          </div>
+        </div>
+      </div>
+      </div>
+  );
+};
+let OurTeam = () => {
+  return (
+    <div className="ourTeam">
+      <div className="container">
+        <h2 className="title">Notre Equipe</h2>
+        <div className="ourTeam_wrappers">
+          <div className="ourTeam_wrappers_wrapper">
+            <img src="upload/photo_craig.jpg" alt="CRAIG GARNER" className="ourTeam_wrappers_wrapper_picture" />
+            <h3 className="ourTeam_wrappers_wrapper_title">CRAIG GARNER <span>CEO</span></h3>
+            <p className="ourTeam_wrappers_wrapper_text">Amazone blessée du type de Sôsiklès. Copie romaine d'après un
+              original grec Elle rassemble le peuple, les
+            </p>
+            <div className="ourTeam_wrappers_wrapper_icons">
+              <a href="#" className="ourTeam_wrappers_wrapper_icons_icon facebook"></a>
+              <a href="#" className="ourTeam_wrappers_wrapper_icons_icon google"></a>
+            </div>
+          </div>
+          <div className="ourTeam_wrappers_wrapper">
+            <img src="upload/photo_bridge.jpg" alt="BRIDGE ROBERTS" className="ourTeam_wrappers_wrapper_picture" />
+            <h3 className="ourTeam_wrappers_wrapper_title">BRIDGE ROBERTS <span>CREATIVE GENIUS</span> </h3>
+            <p className="ourTeam_wrappers_wrapper_text">Amazone blessée du type de Sôsiklès. Copie romaine d'après un
+              original grec Elle rassemble le peuple
+            </p>
+            <div className="ourTeam_wrappers_wrapper_icons">
+              <a href="#" className="ourTeam_wrappers_wrapper_icons_icon facebook"></a>
+              <a href="#" className="ourTeam_wrappers_wrapper_icons_icon ball"></a>
+            </div>
+          </div>
+          <div className="ourTeam_wrappers_wrapper">
+            <img src="upload/photo_malade.jpg" alt="MALADE GARNER" className="ourTeam_wrappers_wrapper_picture" />
+            <h3 className="ourTeam_wrappers_wrapper_title">MALADE GARNER <span>CHEF DE PROJET</span> </h3>
+            <p className="ourTeam_wrappers_wrapper_text">Amazone blessée du type de Sôsiklès. Copie romaine d'après un
+              original grec Elle rass
+            </p>
+            <div className="ourTeam_wrappers_wrapper_icons">
+              <a href="#" className="ourTeam_wrappers_wrapper_icons_icon twitter"></a>
+              <a href="#" className="ourTeam_wrappers_wrapper_icons_icon youtube"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+  );
+};
+let Footer = () => {
+  return (
+    <footer>
+    <div className="container footer_container">
+      <h3 className="footer_text">Copyright © All Rights Reserved.
+        <a href="http//Bridgetech-ma.com.com" className="footer_link">Bridgetech-ma.com.com -</a>
+        <a href="mailto:Goh.h.com@gmail.com" className="footer_link footer_link_email">Goh.h.com@gmail.com</a>
+      </h3>
+      <nav className="footer_menu">
+        <a href="#" className="footer_menu_list">HOME</a>
+        <a href="#" className="footer_menu_list">PORTFOLIOS</a>
+        <a href="#" className="footer_menu_list">BLOG</a>
+        <a href="#" className="footer_menu_list">CONTACT</a>
+        <a href="#" className="footer_menu_list">SHOP</a>
+      </nav>
+    </div>
+  </footer> 
+  );
+};
+
+let Page = (
+  <div>
+  <Header />
+  <Carousel />
+  <Main />
+  <Content />
+  <OurTeam />
+  <Footer />
+  </div>
+);
+
+ReactDOM.render(Page, document.getElementById('page'));
+</script>
+
+</body>
+
+</html>
